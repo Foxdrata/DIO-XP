@@ -149,7 +149,6 @@ Os primeiros países visados incluem:
 2. **Europa**: Portugal é considerado porta de entrada devido à familiaridade cultural com sobremesas europeias como waffles belgas.
 3. **Estados Unidos**: A introdução do waffle salgado pode ser uma estratégia eficaz para competir com redes estabelecidas como Waffle House.
 
-### Adaptações Globais Necessárias
 
 Para competir internacionalmente, a marca está desenvolvendo:
 
