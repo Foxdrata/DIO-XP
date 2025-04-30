@@ -44,7 +44,7 @@ O foco em engajamento digital também ajuda a competir com marcas emergentes que
 
 ## 3. **Adaptação ao Mercado Local**
 
-### Pesquisa de Mercado
+### Pesquisa 
 
 Antes de entrar em novos mercados, a The Waffle King realiza estudos detalhados sobre:
 
