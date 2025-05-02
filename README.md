@@ -73,5 +73,17 @@
 4. Em Detalhes da instância, insira myVM no Nome da máquina virtual e escolha Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2 na Imagem. Deixe os outros padrões.
 
 <img src="images/Captura de tela 2025-05-01 222058.png">
-5. 
-Em Conta de administrador, forneça um nome de usuário, como azureuser e uma senha. A senha deve ter no mínimo 12 caracteres e atender a requisitos de complexidade definidos.
+
+5. Em Conta de administrador, forneça um nome de usuário, como azureuser e uma senha. A senha deve ter no mínimo 12 caracteres e atender a requisitos de complexidade definidos.
+
+<img src="images/Captura de tela 2025-05-01 222652.png">
+
+6. Em Regras de porta de entrada, escolha Permitir portas selecionadas e, em seguida, selecione RDP (3389) e HTTP (80) na lista suspensa.
+
+<img src="images/Captura de tela 2025-05-01 223028.png">
+
+7. Deixe os padrões restantes e, em seguida, selecione o botão Examinar + criar na parte inferior da página.
+
+<img src="images/Captura de tela 2025-05-01 223329.png">
+
+
