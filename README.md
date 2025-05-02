@@ -61,3 +61,17 @@
 <img src="images/Microsoft_Azure-Logo.wine.png" class="logo" width="120"/>
 
 # Criar uma máquina virtual do Windows no Portal do Azure (com imagens atualizadas)
+
+1. Digite máquinas virtuais na pesquisa.
+
+2. Em Serviços, selecione Máquinas virtuais.
+
+3. Na página Máquinas virtuais, clique em Criar e selecione Máquina virtual do Azure. A página Criar uma máquina virtual é aberta.
+
+<img src="images/Captura de tela 2025-05-01 000413.png" class="logo">
+
+4. Em Detalhes da instância, insira myVM no Nome da máquina virtual e escolha Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2 na Imagem. Deixe os outros padrões.
+
+<img src="images/Captura de tela 2025-05-01 222058.png">
+5. 
+Em Conta de administrador, forneça um nome de usuário, como azureuser e uma senha. A senha deve ter no mínimo 12 caracteres e atender a requisitos de complexidade definidos.
