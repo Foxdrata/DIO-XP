@@ -168,9 +168,6 @@ A **Instância Gerenciada de SQL do Azure** oferece quase 100 % de compatibilida
 | Storage | 32 GB+ |
 | Rede | vNet dedicada, fimpúblico OFF |
 
-## Screenshots
-Coloque prints em `/images/` para ilustrar cada etapa (portal, configuração, FQDN, etc.).
-
 ## Referências
 - [Tutorial oficial Microsoft Learn](https://learn.microsoft.com/pt-br/azure/azure-sql/managed-instance/instance-create-quickstart)
 - Documentação geral **Azure SQL**
