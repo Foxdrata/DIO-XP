@@ -82,8 +82,42 @@
 
 <img src="images/Captura de tela 2025-05-01 223028.png">
 
-7. Deixe os padrões restantes e, em seguida, selecione o botão Examinar + criar na parte inferior da página.
+7. Após a execução da validação, selecione o botão Criar na parte inferior da página.
 
 <img src="images/Captura de tela 2025-05-01 223329.png">
 
+8. Após a conclusão da implantação, selecione Ir para o recurso.
 
+<img src="images/Captura de tela 2025-05-01 224238.png">
+
+---
+
+<img src="images/Microsoft_Azure-Logo.wine.png" class="logo" width="120"/>
+
+# Conectar-se à máquina virtual
+
+Inicie uma conexão da área de trabalho remota para a máquina virtual. Estas instruções ensinam a se conectar aàsua VM de um computador com Windows. Em um Mac, você precisa de um cliente RDP, como este Cliente de Área de Trabalho Remota da Mac App Store.
+
+1. Selecione Conectar>RDP na página de visão geral de sua máquina virtual.
+
+<img src="images/Captura de tela 2025-05-01 224410.png">
+
+2. Na guia Conectar-se ao RDP, mantenha as opções padrão para se conectar por endereço IP pela porta 3389 e clique em Baixar arquivo RDP.
+
+3. Abra o arquivo RDP baixado e clique em Conectar quando solicitado.
+
+4. Na janela Segurança do Windows, selecione Mais opções e Usar uma conta diferente. Digite o nome de usuário como localhost\nome de usuário, insira a senha que você criou para a máquina virtual e clique em OK.
+
+5. Você pode receber um aviso do certificado durante o processo de logon. Clique em Sim ou em Continuar para criar a conexão.
+
+<img src="images/Microsoft_Azure-Logo.wine.png" class="logo" width="120"/>
+
+# Instalar servidor Web
+
+Para ver a VM em ação, instale o servidor Web do IIS. Abra um prompt do PowerShell na VM e execute o seguinte comando:
+
+```bash
+  Install-WindowsFeature -name Web-Server -IncludeManagementTools
+```
+
+Quando terminar, feche a conexão RDP com a VM.
