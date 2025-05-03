@@ -121,3 +121,57 @@ Para ver a VM em ação, instale o servidor Web do IIS. Abra um prompt do PowerS
 ```
 
 Quando terminar, feche a conexão RDP com a VM.
+
+---
+<img src="images/Microsoft_Azure-Logo.wine.png" class="logo" width="120"/>
+
+# Azure SQL Managed Instance – Guia Completo 🚀
+
+## Visão geral
+A **Instância Gerenciada de SQL do Azure** oferece quase 100 % de compatibilidade com SQL Server on-premise, mas como serviço PaaS totalmente administrado. Este guia mostra como criá-la pelo **Portal do Azure**.
+
+> 💡 A assinatura gratuita dá direito a **720 h de vCore** (Uso Geral) – ideal para laboratórios sem custo inicial.
+
+## Pré-requisitos
+1. Assinatura do Azure (grátis ou paga)  
+2. Permissão de criação em um Resource Group  
+3. (Opcional) Az CLI ou PowerShell instalados para comandos
+
+## Passo a passo (Portal do Azure)
+| # | Etapa | Dicas |
+|---|-------|-------|
+| 1 | Entrar em <https://portal.azure.com> | — |
+| 2 | Menu **SQL do Azure** → **+ Criar** | Use *Todos os serviços* se não encontrar |
+| 3 | Escolher **Instâncias gerenciadas de SQL** → **Instância única** | — |
+| 4 | Guia **Básico**: definir Assinatura, RG, Nome, Região, Autenticação SQL, Login+Senha (≥ 16 chars) |
+| 5 | **Computação + Armazenamento**: clicar *Configurar instância* e ajustar Camada (Uso Geral/Business Critical), vCores e Storage |
+| 6 | **Rede**: selecionar ou criar vNet/Sub-rede; ponto de extremidade público geralmente **Desabilitado** |
+| 7 | **Segurança/Config. adicionais**: manter padrão ou ajustar fuso horário, replicação, janela de manutenção |
+| 8 | **Marcações**: adicione tags como `Owner=seunome`, `Environment=lab` |
+| 9 | **Revisar + Criar**: confirmar e provisionar (a primeira instância na sub-rede pode levar alguns minutos) |
+|10 | Acompanhar em **Notificações** (sino) → Implantação em andamento |
+
+### Pós-provisionamento
+1. **Criar Banco de Dados**: Página da instância → **+ Novo banco de dados**.  
+2. **Pegar FQDN**: Copiar `host` em *Visão geral* (ex.: `mi-demo.xxx.database.windows.net`).  
+3. **Acessar** com SSMS / Azure Data Studio ou apps, ajustando regras de rede conforme necessário.
+
+### Observações de custo
+- Após as 720 h gratuitas, a cobrança baseia-se em vCores, storage e camada.  
+- Para laboratórios, exclua a instância ou desligue o recurso ao terminar.
+
+## Dicas rápidas
+| Item | Recomendação para labs |
+|------|------------------------|
+| Camada | Uso Geral (Gen5) |
+| vCores | 2–4 |
+| Storage | 32 GB+ |
+| Rede | vNet dedicada, fimpúblico OFF |
+
+## Screenshots
+Coloque prints em `/images/` para ilustrar cada etapa (portal, configuração, FQDN, etc.).
+
+## Referências
+- [Tutorial oficial Microsoft Learn](https://learn.microsoft.com/pt-br/azure/azure-sql/managed-instance/instance-create-quickstart)
+- Documentação geral **Azure SQL**
+- Guia GitHub Markdown
